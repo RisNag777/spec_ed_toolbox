@@ -125,7 +125,7 @@ a:hover {
 
 .workbench {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 1.25rem;
   width: min(1080px, 100%);
   margin: 1.75rem auto 0;
