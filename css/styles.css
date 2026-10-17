@@ -132,6 +132,13 @@ a:hover {
   scroll-margin-top: 1.25rem;
 }
 
+.workbench-note {
+  margin: 1rem auto 0;
+  max-width: 40rem;
+  text-align: center;
+  color: var(--muted);
+}
+
 .broken-wall {
   flex: 1.45 1 0;
   display: block;
