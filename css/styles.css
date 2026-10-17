@@ -123,10 +123,6 @@ a:hover {
 }
 
 
-#causes-heading {
-  scroll-margin-top: 1.25rem;
-}
-
 .workbench {
   display: flex;
   align-items: center;
@@ -226,6 +222,7 @@ a:hover {
   max-width: 42rem;
 }
 
+.reading h1,
 .reading h2 {
   font-family: var(--serif);
   font-size: 1.55rem;
