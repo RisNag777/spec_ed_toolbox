@@ -126,6 +126,7 @@ a:hover {
   position: relative;
   width: min(720px, 100%);
   margin: 2.75rem auto 0;
+  scroll-margin-top: 1.25rem;
 }
 
 .toolbox > img {
