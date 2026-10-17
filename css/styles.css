@@ -161,12 +161,6 @@ a:hover {
   filter: drop-shadow(0 14px 18px rgba(90, 20, 20, 0.16));
 }
 
-.toolbox-note {
-  margin: 0.85rem 0 0;
-  text-align: center;
-  color: var(--muted);
-}
-
 .hotspot {
   position: absolute;
   left: calc(var(--x) * 1%);
