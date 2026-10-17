@@ -135,6 +135,12 @@ a:hover {
   filter: drop-shadow(0 14px 18px rgba(90, 20, 20, 0.16));
 }
 
+.toolbox-note {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  color: var(--muted);
+}
+
 .hotspot {
   position: absolute;
   left: calc(var(--x) * 1%);
@@ -182,7 +188,6 @@ a:hover {
 }
 
 .causes,
-.guides,
 .sources {
   padding: 2.5rem 0 0;
 }
@@ -210,68 +215,6 @@ a:hover {
   font-weight: 650;
   letter-spacing: -0.02em;
   margin: 0 0 0.35rem;
-}
-
-.tool-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.9rem;
-}
-
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  min-height: 100%;
-  padding: 1rem 1.05rem 1.05rem;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 0.9rem;
-  color: inherit;
-  text-decoration: none;
-  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
-}
-
-.tool-card:hover,
-.tool-card:focus-visible,
-.tool-card.is-active {
-  border-color: var(--accent, var(--teal));
-  background: #fffdf8;
-  transform: translateY(-2px);
-}
-
-.swatch {
-  width: 0.85rem;
-  height: 0.85rem;
-  border-radius: 999px;
-  background: var(--accent);
-}
-
-.kicker {
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.tool-card[data-tool="lre"] { --accent: var(--lre); }
-.tool-card[data-tool="rti"] { --accent: var(--rti); }
-.tool-card[data-tool="bias"] { --accent: var(--bias); }
-.tool-card[data-tool="family"] { --accent: var(--family); }
-
-.tool-card-name {
-  font-family: var(--serif);
-  font-size: 1.3rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-}
-
-.tool-card-text {
-  color: var(--muted);
 }
 
 .site-footer {
@@ -428,10 +371,6 @@ a:hover {
 }
 
 @media (max-width: 560px) {
-  .tool-list {
-    grid-template-columns: 1fr;
-  }
-
   .hotspot span {
     font-size: 0.78rem;
   }
@@ -442,14 +381,7 @@ a:hover {
     scroll-behavior: auto;
   }
 
-  .hotspot,
-  .tool-card {
+  .hotspot {
     transition: none;
-  }
-
-  .tool-card:hover,
-  .tool-card:focus-visible,
-  .tool-card.is-active {
-    transform: none;
   }
 }
