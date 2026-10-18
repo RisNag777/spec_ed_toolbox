@@ -12,8 +12,20 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-bar">
       <a class="brand" href="../index.html">Special Education Toolbox</a>
+      <nav class="menu" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+          <span class="menu-label">Menu</span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+        <ul class="menu-panel" id="menu-panel" hidden>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../bibliography.html">Bibliography</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main id="content" class="tool-page tool-lre wrap">
@@ -27,14 +39,7 @@
       <li>If the student needs additional support, then the teacher can go for Tier 3 (Individualized) support, where the student still attends classes with non-disabled peers but gets additional support/instruction from paraprofessionals or instructional assistants.</li>
       <li>If all of these tiers are given a fair try and the student is still struggling, then and only then can they be referred to special education.</li>
     </ul>
-    <nav class="more-tools" aria-label="Solutions">
-      <h2>Solutions</h2>
-      <ul>
-        <li><a href="response-to-intervention.html">Response to Intervention (RtI)</a></li>
-        <li><a href="bias-interruption.html">Teacher/Assessment Bias Interruption</a></li>
-        <li><a href="family-collaboration.html">Family &amp; Community Collaboration</a></li>
-      </ul>
-    </nav>
   </main>
+  <script src="../js/menu.js"></script>
 </body>
 </html>

@@ -12,8 +12,20 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-bar">
       <a class="brand" href="../index.html">Special Education Toolbox</a>
+      <nav class="menu" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+          <span class="menu-label">Menu</span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+        <ul class="menu-panel" id="menu-panel" hidden>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../bibliography.html">Bibliography</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main id="content" class="tool-page tool-bias wrap">
@@ -26,14 +38,7 @@
       <li>Are the diagnostic tools free from cultural and linguistic bias, and do they accurately measure student capability?</li>
       <li>Have I maintained high academic standards and provided robust instructional scaffolding, or am I operating under implicit assumptions that lower standards for racially or culturally diverse students?</li>
     </ul>
-    <nav class="more-tools" aria-label="Solutions">
-      <h2>Solutions</h2>
-      <ul>
-        <li><a href="least-restrictive-environment.html">Least Restrictive Environment (LRE)</a></li>
-        <li><a href="response-to-intervention.html">Response to Intervention (RtI)</a></li>
-        <li><a href="family-collaboration.html">Family &amp; Community Collaboration</a></li>
-      </ul>
-    </nav>
   </main>
+  <script src="../js/menu.js"></script>
 </body>
 </html>

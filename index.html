@@ -13,8 +13,20 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-bar">
       <h1>Special Education Toolbox</h1>
+      <nav class="menu" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+          <span class="menu-label">Menu</span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+        <ul class="menu-panel" id="menu-panel" hidden>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="bibliography.html">Bibliography</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main id="content">
@@ -45,17 +57,8 @@
       </div>
       <p class="workbench-note">Click the broken wall to read the causes and factors of disproportionality. Click a tool to open its page.</p>
     </section>
-
-    <section class="sources wrap" aria-labelledby="sources-heading">
-      <h2 class="section-heading" id="sources-heading">Bibliography</h2>
-      <ul>
-        <li>Harvard Graduate School of Education. (2020, March 4). Racial differences in special education identification [Audio podcast episode]. Harvard EdCast. <a href="https://www.gse.harvard.edu/ideas/edcast/20/03/racial-differences-special-education-identification">https://www.gse.harvard.edu/ideas/edcast/20/03/racial-differences-special-education-identification</a></li>
-        <li>Lexia Learning. (2022, November 10). RTI and MTSS: Do you know the difference between these support systems? Lexia Blog. <a href="https://www.lexialearning.com/blog/rti-and-mtss-do-you-know-difference-between-these-support-systems">https://www.lexialearning.com/blog/rti-and-mtss-do-you-know-difference-between-these-support-systems</a></li>
-        <li>National Center for Learning Disabilities. (2020). Significant disproportionality in special education: Current trends and actions for impact. NCLD. <a href="https://ncld.org/wp-content/uploads/2025/09/2020-Significant-Disproportionality-in-Special-Education.pdf">https://ncld.org/wp-content/uploads/2025/09/2020-Significant-Disproportionality-in-Special-Education.pdf</a></li>
-        <li>Loranger, C. (2026). Multi-Tiered Systems of Support (MTSS) scenario sorting activity [Classroom instructional material]. TEED 5116: Whole Learner Development, University Coursework.</li>
-      </ul>
-    </section>
   </main>
   <script src="js/home.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

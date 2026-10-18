@@ -12,13 +12,26 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-bar">
       <a class="brand" href="index.html">Special Education Toolbox</a>
+      <nav class="menu" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+          <span class="menu-label">Menu</span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+        <ul class="menu-panel" id="menu-panel" hidden>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="bibliography.html">Bibliography</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main id="content" class="wrap">
     <p class="back"><a href="index.html#toolbox">Back to the toolbox</a></p>
     <div class="reading">
+      <img class="tool-photo" src="images/broken-wall.png" width="800" height="746" alt="A broken concrete wall.">
       <h1>Potential causes and factors of disproportionality</h1>
       <ul>
         <li>Disproportionality stems from an unreasonably large number of students of color, or from low-income backgrounds being labeled as disabled. This is prevalent because of misunderstandings of students from different cultural backgrounds. For example, an MLL student who doesn’t know English might not grasp the peculiarities of English grammar very quickly. An observer who is specialized in special education might think this is a sign of disability, when in reality, it is a sign of a child struggling with a foreign language.</li>
@@ -27,5 +40,6 @@
       </ul>
     </div>
   </main>
+  <script src="js/menu.js"></script>
 </body>
 </html>

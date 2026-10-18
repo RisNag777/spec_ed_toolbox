@@ -12,8 +12,20 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="wrap header-bar">
       <a class="brand" href="../index.html">Special Education Toolbox</a>
+      <nav class="menu" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel">
+          <span class="menu-label">Menu</span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+        <ul class="menu-panel" id="menu-panel" hidden>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../bibliography.html">Bibliography</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main id="content" class="tool-page tool-family wrap">
@@ -26,14 +38,7 @@
       <li>Provide all evaluation notices, meeting agendas, and progress monitoring reports in the family's primary language using certified, professional interpreters.</li>
       <li>Begin referral and IEP meetings by inviting parents to share their child's home strengths, cultural knowledge, and personal aspirations. Address historical stigmas around special education openly, ensuring family priorities directly shape educational goals</li>
     </ul>
-    <nav class="more-tools" aria-label="Solutions">
-      <h2>Solutions</h2>
-      <ul>
-        <li><a href="least-restrictive-environment.html">Least Restrictive Environment (LRE)</a></li>
-        <li><a href="response-to-intervention.html">Response to Intervention (RtI)</a></li>
-        <li><a href="bias-interruption.html">Teacher/Assessment Bias Interruption</a></li>
-      </ul>
-    </nav>
   </main>
+  <script src="../js/menu.js"></script>
 </body>
 </html>
